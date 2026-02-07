@@ -39,12 +39,12 @@ body{
 
 .navbar3 a{
     display: inline-block;
-    margin-top: 653px;
-    margin-left: 76px;
+    margin-top: 311px;
+    margin-left: 18px;
     text-align: left;
     text-decoration: none;
     color: white;
-    font-size: 150px;
+    font-size: 30px;
     padding: 9px;
     border: 3px solid white;
     background-color: black;
@@ -52,29 +52,32 @@ body{
 
 .navbar3 :hover{
     color: crimson;
-    font-size:250px ;
+    font-size:40px ;
 }
 
 .navbar4 a{
     display: block;
-    margin-top: -743px;
-    margin-left: 1272px;
+    margin-top: -303px;
+    margin-left: 420px;
     text-align: left;
     text-decoration: none;
     color: white;
-    font-size: 150px;
+    font-size: 30px;
     padding: 9px;
     border: 3px solid white;
     background-color: black;
 }
 
 #pix{
-    width: 500px;
+    width: 220px;
+}
+#pic{
+    width: 281px;
 }
 
 .navbar4 :hover{
-    color: crimson;
-    font-size:250px ;
+    
+    font-size:30px ;
 }
 
 
@@ -83,24 +86,24 @@ body{
         position: absolute;
         color: white;
         top: -36px;
-        left: 610px;
-    font-size: 300px;
+        left: 459px;
+    font-size: 100px;
     -webkit-text-stroke: 7px  black;
     background-color: black;
 }
 #btn{
-        position: absolute;
-        color: white;
-        top: 1433px;
-        left: 1067px;
-    font-size: 100px;
+    position: absolute;
+    color: white;
+    top: 643px;
+    left: 616px;
+    font-size: 40px;
     text-decoration: none;
     background-color: aqua;
-    padding-top: 42px;
-    padding-bottom: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    -webkit-text-stroke: 4px  black;
+    padding-top: 4px;
+    padding-bottom: -6px;
+    padding-left: 14px;
+    padding-right: 15px;
+    -webkit-text-stroke: 2px black;
     border: 3px solid white;
     
 }
