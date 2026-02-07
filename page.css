@@ -43,7 +43,7 @@ body{
 #txt{
         position: absolute;
         color: white;
-        top: 284px;
+        top: 0px;
         left: 867px;
     font-size: 120px;
     -webkit-text-stroke: 7px  black;
@@ -54,9 +54,9 @@ body{
 #txt1{
         position: absolute;
         color: white;
-        top: 527px;
-        left: 594px;
-    font-size: 120px;
+        top: 1106px;
+        left: 115px;
+    font-size: 100px;
     -webkit-text-stroke: 7px  black;
     background-color: black;
     border: 2px solid palevioletred;
@@ -65,9 +65,31 @@ body{
 #txt2{
         position: absolute;
         color: white;
-        top: 772px;
-        left: 505px;
-    font-size: 120px;
+        top: 1257px;
+        left: 46px;
+    font-size: 100px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+    border: 2px solid palevioletred;
+}
+#txt3{
+        position: absolute;
+        color: palevioletred;
+        top: 142px;
+        left: 662px;
+    font-size: 200px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+    border: 2px solid palevioletred;
+}
+
+#txt4{
+        position: absolute;
+        color: palevioletred;
+        top: 618px;
+        left: 523px;
+        width: 1320px;
+    font-size: 100px;
     -webkit-text-stroke: 7px  black;
     background-color: black;
     border: 2px solid palevioletred;
