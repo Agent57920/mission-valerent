@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+        font-family: "Bebas Neue", sans-serif;
+       
+      }
+      
+
+
+/* BACKGROUND CONTAINER */
+#bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE — FIXED */
+.bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;      /* always fit horizontally */
+    height: auto;     /* maintain aspect ratio */
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER */
+.header3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+
+
+
+
+/* TEXT ON BACKGROUND */
+#txt{
+        position: absolute;
+        color: white;
+        top: -36px;
+        left: 59px;
+    font-size: 120px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+}
+
+#answer{
+    position: absolute;
+    top: 651px;          /* just above the button */
+    left: 1706px;
+    
+    width: 600px;
+    height: 120px;
+
+    font-size: 70px;
+    padding: 20px;
+    
+    background-color: white;
+    color: black;
+
+    border: 6px solid black;
+    outline: none;
+}
+
+#pic{
+    width: 1000px;
+    margin-top: 212px;
+    margin-left: 100px;
+}
+
+#btn{
+        position: absolute;
+        color: white;
+        top: 1293px;
+        left: 1815px;
+    font-size: 100px;
+    text-decoration: none;
+    background-color: aqua;
+    padding-top: 42px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-text-stroke: 4px  black;
+    border: 3px solid white;
+    
+}
+
+/* IMAGE ON BACKGROUND */
+.hero-image{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 400px;
+}
+

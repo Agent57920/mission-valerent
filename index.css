@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+        font-family: "Bebas Neue", sans-serif;
+       
+      }
+      
+
+
+/* BACKGROUND CONTAINER */
+#bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE — FIXED */
+.bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;      /* always fit horizontally */
+    height: auto;     /* maintain aspect ratio */
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER */
+.header3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+
+.mid3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar3{
+    display: inline-block;
+    margin-top: 523px;
+    margin-left: -1850px;
+   
+}
+
+.navbar3 li{
+    text-align: left;
+}
+
+.navbar3 li a{
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+    padding: 20px;
+}
+
+.navbar3 li a:hover{
+    color: crimson;
+    font-size:250px ;
+}
+
+
+/* TEXT ON BACKGROUND */
+.hero-text{
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    color: white;
+    font-size: 90px;
+}
+
+/* IMAGE ON BACKGROUND */
+.hero-image{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 400px;
+}

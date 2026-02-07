@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+        font-family: "Bebas Neue", sans-serif;
+       
+      }
+      
+
+
+/* BACKGROUND CONTAINER */
+#bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE — FIXED */
+.bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;      /* always fit horizontally */
+    height: auto;     /* maintain aspect ratio */
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER */
+.header3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+
+
+.navbar3 a{
+    display: inline-block;
+    margin-top: 653px;
+    margin-left: 76px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+    padding: 9px;
+    border: 3px solid white;
+    background-color: black;
+}
+
+.navbar3 :hover{
+    color: crimson;
+    font-size:250px ;
+}
+
+.navbar4 a{
+    display: block;
+    margin-top: -743px;
+    margin-left: 1272px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+    padding: 9px;
+    border: 3px solid white;
+    background-color: black;
+}
+
+#pix{
+    width: 500px;
+}
+
+.navbar4 :hover{
+    color: crimson;
+    font-size:250px ;
+}
+
+
+/* TEXT ON BACKGROUND */
+#txt{
+        position: absolute;
+        color: white;
+        top: -36px;
+        left: 610px;
+    font-size: 300px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+}
+#btn{
+        position: absolute;
+        color: white;
+        top: 1433px;
+        left: 1067px;
+    font-size: 100px;
+    text-decoration: none;
+    background-color: aqua;
+    padding-top: 42px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-text-stroke: 4px  black;
+    border: 3px solid white;
+    
+}
+
+/* IMAGE ON BACKGROUND */
+.hero-image{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 400px;
+}
+

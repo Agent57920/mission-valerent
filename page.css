@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+        font-family: "Bebas Neue", sans-serif;
+       
+      }
+      
+
+
+/* BACKGROUND CONTAINER */
+#bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE — FIXED */
+.bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;      /* always fit horizontally */
+    height: auto;     /* maintain aspect ratio */
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER */
+.header3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+
+
+
+
+/* TEXT ON BACKGROUND */
+#txt{
+        position: absolute;
+        color: white;
+        top: 284px;
+        left: 867px;
+    font-size: 120px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+    border: 2px solid palevioletred;
+}
+
+#txt1{
+        position: absolute;
+        color: white;
+        top: 527px;
+        left: 594px;
+    font-size: 120px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+    border: 2px solid palevioletred;
+}
+
+#txt2{
+        position: absolute;
+        color: white;
+        top: 772px;
+        left: 505px;
+    font-size: 120px;
+    -webkit-text-stroke: 7px  black;
+    background-color: black;
+    border: 2px solid palevioletred;
+}
+
+#btn{
+    position: absolute;
+    color: white;
+    top: 1293px;
+    left: 1815px;
+font-size: 100px;
+text-decoration: none;
+background-color: aqua;
+padding-top: 42px;
+padding-bottom: 25px;
+padding-left: 100px;
+padding-right: 100px;
+-webkit-text-stroke: 4px  black;
+border: 3px solid white;
+
+}
+
+
+
