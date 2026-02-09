@@ -1,0 +1,1402 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+        font-family: "Bebas Neue", sans-serif;
+       
+      }
+      
+
+
+/* BACKGROUND CONTAINER */
+#bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE — FIXED */
+.bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;      /* always fit horizontally */
+    height: auto;     /* maintain aspect ratio */
+    transform: translate(-50%, -50%);
+}
+
+/* HEADER */
+.header3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+
+
+
+
+/* TEXT ON BACKGROUND */
+#txt{
+        position: absolute;
+        color: white;
+        top: -36px;
+        left: 59px;
+    font-size: 65px;
+    -webkit-text-stroke: 2px  black;
+    background-color: black;
+}
+
+#answer{
+    position: absolute;
+    top: 262px;          /* just above the button */
+    left: 835px;
+    
+    width: 365px;
+    height: 73px;
+
+    font-size: 30px;
+    padding: 0px;
+    
+    background-color: white;
+    color: black;
+
+    border: 6px solid black;
+    outline: none;
+}
+
+#pic{
+    width: 473px;
+    margin-top: 119px;
+    margin-left: 52px;
+}
+
+#subd{position: absolute;
+    top: 555px;
+    left: 914px;
+}
+
+#sub{
+    font-family: "Playfair Display", serif;
+    padding: 15px;
+    border: 2px solid purple;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+  }
+
+/* IMAGE ON BACKGROUND */
+.hero-image{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 400px;
+}
+  
+  
+         #txt{
+            color: aliceblue;
+            margin-left: 172px;
+            margin-bottom: -90px ;
+            visibility: visible;
+         }
+         
+        .settings{
+            background-color: black;
+            width: 20px;
+        }
+        #settings{
+            width: 49px;
+            margin-top:9px ;
+            display: block;
+            margin-left: -57px;
+            border: 2px solid purple;
+            transition: all 1s ease-in-out .1s;
+        }
+        #settings:hover{
+            border-radius: 40px;
+        }
+        ul{
+            list-style: none;
+            background: black;
+            width: 0px;
+  
+        }
+  
+        ul li a{
+            display: block;
+            padding: 20px 25px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+       
+    .dropdown{
+        width: 20%;
+        background: black;
+        position: absolute;
+        z-index: 999;
+        visibility: hidden;
+        height: 255px;
+        border: 2px solid rgb(233, 128, 59);
+        margin-top: -30px;
+    }
+  
+   
+  
+  
+    .helpimg{
+        width: 50px;
+        border: 2px solid purple;
+        transition: all 1s ease-in-out .1s;
+    }
+    .helpimg:hover {
+        border-radius: 40px;
+    }
+    .help{
+        margin-top: -26px;
+        margin-left: 8px;
+    }
+    
+  .drp{
+    color: aliceblue;
+    margin-left: 1400px;
+    margin-top: -129px;
+    border: 2px solid purple;
+    width: 113px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 1s ease-in-out .1s;
+  }
+  
+  .drp:hover{
+    border-radius: 30px;
+  }
+  
+  .drp1{
+    color: aliceblue;
+    margin-left: 1400px;
+    margin-top: 20px;
+    border: 2px solid purple;
+    width: 103px;
+    height: 47px;
+    cursor: pointer;
+    transition: all 1s ease-in-out .1s;
+  }
+  
+  .drp1:hover{
+    border-radius: 30px;
+  }
+  
+  .lb:hover ~ .lb1{
+    visibility: visible;
+  }
+  
+  .lb1{
+    color: white;
+    border: 5px solid rgb(233, 128, 59);
+    width: 250px;
+    margin-left: 1070px;
+    margin-top: -450px;
+    visibility: hidden;
+  }
+  
+  .lb{
+    width: 0px;
+    margin-left: -200px;
+  }
+
+  #agreeButton{
+    display: none;
+}
+  
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  #modal {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+  }
+  
+  #modal h1 {
+    font-size: 30px;
+    color: aliceblue;
+  }
+  
+  #modalp{
+    color: aliceblue;
+  }
+  
+  #modal button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #modal button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Hides the content section until the user clicks 'I Agree' */
+  #content {
+    display: block;
+  }
+  
+  .tc{
+    color: aquamarine;
+  }
+  
+  .dobly:hover{
+    text-decoration: underline;
+  }
+  
+  #close:hover{
+    text-decoration: underline;
+  }
+  
+  #perilev1{
+    margin-left: 294px;
+    margin-top: 185px;
+    width: 763px;
+    z-index: 0;
+    position: fixed;
+  }
+  .el{
+    cursor: pointer;
+  }
+  
+  .el, #H, #He, #Li, #Be{
+    border: 2px solid ;
+    width: 165px;
+    height: 86.1px;
+    z-index: 1;
+    position: relative;
+    border-color: green;
+    display: none;
+  }
+  
+  #H{
+    margin-top: 277px;
+    margin-left: 51px;
+   
+  }
+  #He{
+    margin-top: -90px;
+    margin-left:218px;
+   
+  }
+  #Li{
+    margin-top: -90px;
+    margin-left:385px;
+   
+  }
+  
+  #Be{
+    margin-top: -2px;
+    margin-left:51px;
+   
+  }
+  
+  #B{
+    margin-top: -90px;
+    margin-left:218px;
+   
+  }
+  
+  #C{
+    margin-top: -90px;
+    margin-left:385px;
+   
+  }
+  
+  #N{
+    margin-top: -2px;
+    margin-left: 51px;
+   
+  }
+  
+  #O{
+    margin-top: -90px;
+    margin-left: 218px;
+   
+  }
+  
+  #F{
+    margin-top: -91px;
+    margin-left: 385px;
+   
+  }
+  
+  #Ne{
+    margin-top: -2px;
+    margin-left: 51px;
+   
+  }
+  
+  #Na{
+    margin-top: -90px;
+    margin-left: 218px;
+   
+  }
+  
+  #Mg{
+    margin-top: -90px;
+    margin-left: 385px;
+   
+  }
+  
+  #Al{
+    margin-top: -2px;
+    margin-left: 51px;
+   
+  }
+  
+  
+  #P{
+    margin-top: -90px;
+    margin-left: 218px;
+   
+  }
+  
+  #S{
+    margin-top: -90px;
+    margin-left: 385px;
+   
+  }
+  
+  
+  #Himg{
+    background-image: url("greenchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 16px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #Heimg{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 96px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #Liimg{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 176px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Beimg{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 256px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Bimg{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 336px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Cimg{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 416px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Nimg{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 496px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Oimg{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 576px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Fimg{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 656px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Neimg{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 736px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Naimg{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 816px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Mgimg{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 896px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Alimg{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    cursor: pointer;
+    margin-top: 21px;
+    margin-left: 976px;
+    position: fixed;
+    z-index: 2;
+  }
+
+  #Pimg{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 1056px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #Simg{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 1136px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C1img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 21px;
+    margin-left: 1216px;
+    position: fixed;
+    z-index: 2;
+  }
+  
+  
+  
+  #C2img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 16px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #C3img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 96px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #C4img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 176px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C5img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 256px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C6img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 336px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C7img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 416px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C8img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 496px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C9img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 576px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C10img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 656px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C11img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 736px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C12img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 816px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C13img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 896px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C14img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 976px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C15img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 1056px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C16img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 1136px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C17img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 161px;
+    margin-left: 1216px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  #C18img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 16px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #C19img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 96px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #C20img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 176px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C21img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 256px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C22img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 336px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C23img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 416px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C24img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 496px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C25img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 576px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C26img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 656px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C27img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 736px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C28img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 816px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C29img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 896px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C30img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 976px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C31img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 1056px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C32img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 1136px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C33img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 301px;
+    margin-left: 1216px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  #C34img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 16px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  #C35img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 96px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+  #C36img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 176px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C37img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 256px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C38img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 336px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C39img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 416px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C40img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 496px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C41img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 576px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C42img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 656px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C43img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 736px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C44img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 816px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C45img{
+    background-image: url("ylochoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 896px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C46img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 976px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C47img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 1056px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C48img{
+    background-image: url("whtchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 1136px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #C49img{
+    background-image: url("bluchoco.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60px;
+    height: 130.1px;
+    margin-top: 441px;
+    margin-left: 1216px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #hnt{
+    width: 311px;
+  }
+  
+  #mmdiv{
+    border: 2px solid purple;
+    width: 79px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: -68px;
+    margin-bottom: -201px;
+    
+   }
+  
+   #mainmenue{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+   }
+  
+  #elimgdiv{
+    height: 50px;
+    width: 50px;
+  }
+  .el.dropb{
+    border: 2px solid red;
+    
+  }
+  
+  #H.dropb{
+    border: 2px solid rgb(123, 231, 21);
+  }
+  
+  #H.dropc{
+    border: 2px solid red;
+  }
+  
+  #He.dropb{
+    border: 2px solid rgb(123, 231, 21);
+  }
+  
+  #He.dropc{
+    border: 2px solid red;
+  }
+
+  #Li.dropb{
+    border: 2px solid rgb(123, 231, 21);
+  }
+  
+  #Li.dropc{
+    border: 2px solid red;
+  }
+
+  #Be.dropb{
+    border: 2px solid rgb(123, 231, 21);
+  }
+  
+  #Be.dropc{
+    border: 2px solid red;
+  }
+  
+  
+  #TA {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    visibility: hidden;
+  }
+  
+  /* Modal content */
+  #TAtxt {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+    color: aliceblue;
+  }
+  
+  .ta{
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+  
+  #NL {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    
+  }
+  
+  /* Modal content */
+  #NLtxt {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+    color: aliceblue;
+  }
+  
+  .nl{
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+  
+  #CNT {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+    visibility: hidden;
+  }
+  
+  #cnttxt {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+    color: aliceblue;
+  }
+  
+  .cnt{
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    
+  }
+  
+  #cntButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  
+  
+  
