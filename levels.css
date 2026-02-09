@@ -58,11 +58,15 @@ body{
     color: crimson;
     font-size:40px ;
 }
+.navbar6 :hover{
+    color: crimson;
+    font-size:40px ;
+}
 
 .navbar4 a{
     display: block;
-    margin-top: -303px;
-    margin-left: 849px;
+    margin-top: -196px;
+    margin-left: 942px;
     text-align: left;
     text-decoration: none;
     color: white;
@@ -73,9 +77,22 @@ body{
 }
 .navbar5 a{
     display: block;
-    margin-top: -301px;
-    margin-left: 434px;
-    margin-right: 550px;
+    margin-top: -208px;
+    margin-left: 304px;
+    margin-right: 785px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 9px;
+    border: 3px solid white;
+    background-color: black;
+}
+.navbar6 a{
+    display: block;
+    margin-top: -203px;
+    margin-left: 602px;
+    margin-right: 444px;
     text-align: left;
     text-decoration: none;
     color: white;
@@ -85,13 +102,16 @@ body{
     background-color: black;
 }
 #pix{
-    width: 220px;
+    width: 136px;
 }
 #pic{
-    width: 281px;
+    width: 181px;
 }
 #pis{
-    width: 281px;
+    width: 178px;
+}
+#pil{
+    width: 217px;
 }
 
 .navbar4 :hover{
