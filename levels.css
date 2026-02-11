@@ -66,6 +66,10 @@ body{
     color: crimson;
     font-size:40px ;
 }
+.navbar8 :hover{
+    color: crimson;
+    font-size:40px ;
+}
 
 .navbar4 a{
     display: block;
@@ -118,6 +122,19 @@ body{
     border: 3px solid white;
     background-color: black;
 }
+.navbar8 a{
+    display: block;
+    margin-top: 11px;
+    margin-left: 18px;
+    margin-right: 433px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 9px;
+    border: 3px solid white;
+    background-color: black;
+}
 #pix{
     width: 136px;
 }
@@ -132,6 +149,9 @@ body{
 }
 #pif{
     width: 103px;
+}
+#pij{
+    width: 211px;
 }
 
 .navbar4 :hover{
