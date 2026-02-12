@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000000;
+    font-family: "Bebas Neue", sans-serif;
+}
+#health{
+    color: wheat;
+}
+#time{
+    color: wheat;
+}
+
+#gameArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#agreeButton{
+    display: none;
+}
+#couple {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 40px rgb(203, 255, 192);
+}
+
+.door {
+    position: absolute;
+    background: rgba(236, 232, 232, 0.897);
+    transition: 0.2s;
+}
+
+.top, .bottom {
+    width: 160px;
+    height: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left, .right {
+    width: 25px;
+    height: 160px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top { top: calc(50% - 100px); }
+.bottom { top: calc(50% + 75px); }
+.left { left: calc(50% - 100px); }
+.right { left: calc(50% + 75px); }
+
+.closed {
+    background: rgb(59, 236, 5) !important;
+}
+
+.warning {
+    background: red !important;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: wheat;
+}
+
+#endScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+}
+#bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+/* BACKGROUND IMAGE — FIXED */
+.bg-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;      /* always fit horizontally */
+    height: auto;     /* maintain aspect ratio */
+    transform: translate(-50%, -50%);
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000000;
+  }
+  
+  /* Modal content */
+  #modal {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 880px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+  }
+  
+  #modal h1 {
+    font-size: 30px;
+    color: aliceblue;
+  }
+  
+  #modalp{
+    color: aliceblue;
+  }
+  
+  #modal button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #modal button:hover {
+    background-color: #45a049;
+  }
+  
+  #R1{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  #R2{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 16px;
+    text-decoration: none;
+  }
+  #R3{
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 51px;
+  }
+
+#overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+  }
+  
+  /* Modal content */
+  #modal1 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 880px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+  }
+  
+  #modal1 h1 {
+    font-size: 70px;
+    color: aliceblue;
+  }
+  #modal1 h3 {
+    font-size: 30px;
+    color: aliceblue;
+  }
+  #modal1 h4 {
+    font-size: 20px;
+    color: aliceblue;
+  }
+  
+  #modal1 h2{
+    font-size: 50px;
+    color: aliceblue;
+  }
+  
+  
+
+#overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+  }
+  
+  /* Modal content */
+  #modal2 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 880px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid aliceblue;
+  }
+  
+  #modal2 h1 {
+    font-size: 30px;
+    color: aliceblue;
+  }
+  
+  #modal2p{
+    color: aliceblue;
+  }
+  
+  
