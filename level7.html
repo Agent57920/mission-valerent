@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valerent</title>
+
+    <link rel="stylesheet" href="level7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="overlay">
+        <div id="modal">
+            <h1>Find the right time</h1>
+            <h1>1.Press Space button to kiss</h1>
+            <h1>2.The kiss should be done when the circle is at its maxiumum size(it glows) and the bar is at the green spot</h1>
+            <h1>3.Win atleast two out of three rounds to win the game</h1>
+
+            <button id="agreeButton" >WITH MUSIC</button>
+            <button id="agreeButton1">Start game</button>
+        </div>
+    </div>
+
+<div id="game">
+
+    <!-- Scene Image -->
+    <img id="sceneImage" src="distance.png" alt="scene">
+
+    <!-- Pulse Ring -->
+    <div id="pulse"></div>
+
+    <!-- Slider System -->
+    <div id="sliderContainer">
+        <div id="greenZone"></div>
+        <div id="slider"></div>
+    </div>
+
+    <!-- Round Info -->
+    <div id="roundInfo">Round 1 / 3</div>
+
+    <!-- Result Overlay -->
+    <div id="resultOverlay">
+        <div id="resultText"></div>
+        <button onclick="location.reload()">Restart</button>
+    </div>
+
+    <div id="overlay1">
+        <div id="modal1">
+            <h2>Kissed on time</h2>
+            <h1>Happy Kiss Day!!</h1>
+            <h3>'A kiss is the sweetest language of love, binding two souls together in a single, magical moment'</h3>
+            <h4>1 DAY TO GO FOR THE GRAND SURPRISE</h4>
+
+            <a href="index.html" id="R1">Return</a>
+            <a href="trailor.html" id="R5">Teaser</a>
+        </div>
+    </div>
+</div>
+
+    <div id="overlay2">
+        <div id="modal2">
+            <h1>Could't kiss on time</h1>
+
+            <a href="level7.html" id="R2">Try Again</a>
+            <a href="levels.html" id="R3">exit level</a>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="level7.js"></script>
+</body>
+</html>
