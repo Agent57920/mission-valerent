@@ -74,6 +74,10 @@ body{
     color: crimson;
     font-size:40px ;
 }
+.navbar10 :hover{
+    color: crimson;
+    font-size:40px ;
+}
 
 .navbar4 a{
     display: block;
@@ -143,7 +147,20 @@ body{
     display: block;
     margin-top: -175px;
     margin-left: 375px;
-    margin-right: 622px;
+    margin-right: 728px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 9px;
+    border: 3px solid white;
+    background-color: black;
+}
+.navbar10 a{
+    display: block;
+    margin-top: -175px;
+    margin-left: 646px;
+    margin-right: 429px;
     text-align: left;
     text-decoration: none;
     color: white;
@@ -172,6 +189,9 @@ body{
 }
 #pik{
     width: 140px;
+}
+#pio{
+    width: 162px;
 }
 
 .navbar4 :hover{
