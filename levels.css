@@ -38,6 +38,19 @@ body{
 
 
 .navbar3 a{
+    display: block;
+    margin-top: -136px;
+    margin-left: 7px;
+    margin-right: 1151px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 9px;
+    border: 3px solid white;
+    background-color: black;
+}
+.navbar39 a{
     display: inline-block;
     margin-top: 311px;
     margin-left: 18px;
@@ -48,11 +61,16 @@ body{
     padding: 9px;
     border: 3px solid white;
     background-color: black;
+    visibility: hidden;
 }
 
 .navbar3 :hover{
     color: crimson;
     font-size:40px ;
+}
+.navbar4 :hover{
+    color: rgb(220, 110, 20);
+    font-size:70px ;
 }
 .navbar5 :hover{
     color: crimson;
@@ -85,17 +103,17 @@ body{
     margin-left: 942px;
     text-align: left;
     text-decoration: none;
-    color: white;
+    color: rgb(238, 196, 9);
     font-size: 30px;
     padding: 9px;
-    border: 3px solid white;
+    border: 3px solid rgb(230, 189, 10);
     background-color: black;
 }
 .navbar5 a{
     display: block;
-    margin-top: -143px;
-    margin-left: 217px;
-    margin-right: 943px;
+    margin-top: -303px;
+    margin-left: 220px;
+    margin-right: 936px;
     text-align: left;
     text-decoration: none;
     color: white;
@@ -170,9 +188,12 @@ body{
     background-color: black;
 }
 #pix{
-    width: 136px;
+    width: 319px;
 }
 #pic{
+    width: 110px;
+}
+#pics{
     width: 110px;
 }
 #pis{
