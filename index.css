@@ -89,7 +89,7 @@
 
 
 
-@media (min-width: 667px) and (max-width: 800px)   {
+@media (min-width: 400px) and (max-width: 800px)   {
     body{
    margin: 0;
    padding: 0;
@@ -135,8 +135,8 @@
 
 .navbar3{
    display: inline-block;
-   margin-top: 99px;
-   margin-left: -538px;
+   margin-top: 35%;
+   margin-left: -70%;
   
 }
 
@@ -148,7 +148,7 @@
    text-align: left;
    text-decoration: none;
    color: white;
-   font-size: 40px;
+   font-size: 200%;
    padding: 20px;
 }
 
